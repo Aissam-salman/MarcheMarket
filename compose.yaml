@@ -8,6 +8,7 @@ services:
     environment:
       POSTGRES_USER: salman
       POSTGRES_PASSWORD: secret
+      POSTGRES_DB: market
     volumes:
       - pgdata_mfi:/var/lib/postgresql/data
 volumes:

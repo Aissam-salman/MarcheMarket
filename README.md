@@ -27,8 +27,14 @@ doivent pouvoir gérer leurs produits, les clients doivent pouvoir passer des co
 ### 4. **Architecture de l'Application**
 
 L'architecture suit une approche orientée objet, avec une séparation claire des préoccupations :
-- Design pattern : **MVC** 
+- Design pattern : **N tiers** 
 
+src/main/java/com/app/mfi  
+    |-- controller  
+    |-- service  
+    |-- repository  
+    |-- model  
+    |-- dto  
 
 ###  5. **Technologies Utilisées**
 
@@ -51,7 +57,10 @@ L'architecture suit une approche orientée objet, avec une séparation claire de
 
 Justification d'un Choix :
 
-- **Choix de séparer les entités Client et Producer** : Cette séparation permet de gérer distinctement les fonctionnalités et les autorisations spécifiques à chaque type d'utilisateur. Par exemple, les clients passent des commandes, tandis que les producteurs gèrent les produits. Cette distinction améliore la clarté et la maintenance du code.
+- **Choix de séparer les entités Client et Producer** : Cette séparation permet de gérer distinctement les 
+  fonctionnalités et les autorisations spécifiques à chaque type d'utilisateur. Par exemple, les clients passent des 
+  commandes, tandis que les producteurs gèrent les produits. Cette distinction améliore la clarté et la maintenance du code.  
+
 ![img.png](img.png)
 ### Analyse du Diagramme de Classe :
 
